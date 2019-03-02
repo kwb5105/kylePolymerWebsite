@@ -24,16 +24,22 @@
     <px-app-nav style="margin-top: 40px" items='[{"label":"Home","id":"home","icon":"px-fea:home"},{"label":"Alerts","id":"alerts","icon":"px-fea:alerts","metadata":{"openCases":"12","closedCases":"82"}},{"label":"Assets","id":"assets","icon":"px-fea:asset","children":[{"label":"Asset #1","id":"a1"},{"label":"Asset #2","id":"a2"}]},{"label":"Dashboards","id":"dashboards","icon":"px-fea:dashboard","children":[{"label":"See Live Truck View","id":"trucks","icon":"px-obj:truck"},{"label":"Track Orders","id":"orders","icon":"px-fea:orders"},{"label":"Analyze Invoices","id":"invoices","icon":"px-fea:templates"}]}]'
         vertical selected-route='["home"]' selected-meta='{}'>
     </px-app-nav>
-    <px-modal header-text="Confirm Trevor is a douchebag" body-text="Do you want to confirm that trevor is a douchebage? this record?"
-        accept-text="Permanently Comfirm douche-bag." reject-text="Cancel" opened>
+    <px-modal header-text="Confirm Kyle's Website is awesome" body-text="Do you want to confirm that Kyle is awesome?"
+        accept-text="Permanently Comfirm awesomeness." reject-text="Cancel" opened open-trigger="[[trigger]]">
     </px-modal>
     <!-- Loads natively on browsers that support Javascript modules like
        Chrome, Safari, Firefox 60, Edge 16. For all others, use a
        module-compatible toolchain like Polymer CLI, WebPack, or Rollup -->
-    <div style="margin-top: 40px; margin-left:60px"ng-app="">
+    <div style="margin-top: 40px; margin-left:60px" ng-app="">
         <p>Name : <input type="text" ng-model="name"></p>
         <h1>Hello {{name}}</h1>
+
+        <px-modal-trigger trigger='{{trigger}}'>
+            <button class='btn btn--tertiary'>Open Modal
+            </button>
+        </px-modal-trigger>
     </div>
+
     <script type="module">
         import {PolymerElement, html} from 'https://unpkg.com/@polymer/polymer@next/polymer-element.js?module';
 
