@@ -1,6 +1,6 @@
 {
   "name": "px-modal",
-  "version": "3.3.5",
+  "version": "3.0.0",
   "main": [
     "px-modal.html"
   ],
@@ -21,8 +21,7 @@
     "npm-debug.log"
   ],
   "dependencies": {
-    "polymer": "#1.9 - 2",
-    "iron-fit-behavior": "^2.1.0"
+    "polymer": "#1.9 - 2"
   },
   "devDependencies": {
     "px-theme": "^3.0.0",
@@ -51,6 +50,5 @@
         "webcomponentsjs": "^0.7.0"
       }
     }
-  },
-  "license": "Apache-2.0"
+  }
 }

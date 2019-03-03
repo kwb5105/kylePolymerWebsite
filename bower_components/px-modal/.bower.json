@@ -1,6 +1,6 @@
 {
   "name": "px-modal",
-  "version": "3.3.5",
+  "version": "3.0.0",
   "main": [
     "px-modal.html"
   ],
@@ -21,8 +21,7 @@
     "npm-debug.log"
   ],
   "dependencies": {
-    "polymer": "#1.9 - 2",
-    "iron-fit-behavior": "^2.1.0"
+    "polymer": "#1.9 - 2"
   },
   "devDependencies": {
     "px-theme": "^3.0.0",
@@ -52,16 +51,15 @@
       }
     }
   },
-  "license": "Apache-2.0",
   "homepage": "https://github.com/predixdesignsystem/px-modal",
-  "_release": "3.3.5",
+  "_release": "3.0.0",
   "_resolution": {
     "type": "version",
-    "tag": "v3.3.5",
-    "commit": "76e409705fbec2f9860635ac4d23e7413004fa26"
+    "tag": "v3.0.0",
+    "commit": "95d9997317a5f78c20a3c4f9291d9b825ea30d7b"
   },
   "_source": "https://github.com/predixdesignsystem/px-modal.git",
-  "_target": "^3.3.5",
+  "_target": "v3.0.0",
   "_originalSource": "https://github.com/predixdesignsystem/px-modal.git",
   "_direct": true
 }
