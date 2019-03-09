@@ -51,7 +51,13 @@
         <!---<div w3-test-directive></div>-->
 
         <h2>Full Name: {{firstName + " " + lastName}}</h2>
-        <h3>Database Data: {{databaseResponse}}</h3>
+        <h3>Raw Array List of Star Wars characters from API: {{starWarsAPInames}}</h3>
+        <h3>Formatted list of names from API:</h3>
+        <ul>
+            <li ng-repeat='name in starWarsAPInames'>
+                {{name}}
+            </li>
+        </ul>
 
     </div>
     <script src="js/app.js"></script>
