@@ -15,39 +15,45 @@
 </head>
 
 <body style="background-color:rgb(128, 128, 128)" ng-app="myApp">
-    <px-branding-bar application-title="Kyle's Polymer Web application">
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <px-branding-bar application-title="Kyle's Polymer Web application">
 
-    </px-branding-bar>
-    <px-app-nav items='[{"label":"Home","id":"home","icon":"px-fea:home"},{"label":"About","id":"alerts","icon":"px-fea:alerts","metadata":{"openCases":"12","closedCases":"82"}},{"label":"Data","id":"assets","icon":"px-fea:asset","children":[{"label":"Asset #1","id":"a1"},{"label":"Asset #2","id":"a2"}]},{"label":"Dashboards","id":"dashboards","icon":"px-fea:dashboard","children":[{"label":"Personal Data","id":"trucks","icon":"px-obj:truck"},{"label":"Orders","id":"orders","icon":"px-fea:orders"},{"label":"Analysis","id":"invoices","icon":"px-fea:templates"}]}]'
-        selected-route='["home"]'></px-app-nav>
-    <px-modal id="myModal" header-text="Confirm Kyle's Website is awesome" body-text="Do you want to confirm that Kyle's Website is awesome?"
-        accept-text="Permanently Comfirm awesomeness." reject-text="Cancel" opened>
-    </px-modal>
-    <div ng-app="">
-        <p>Name : <input type="text" ng-model="name"></p>
-        <h1>Hello {{name}}</h1>
-    </div>
+        </px-branding-bar>
+        <px-app-nav items='[{"label":"Home","id":"home","icon":"px-fea:home"},{"label":"About","id":"alerts","icon":"px-fea:alerts","metadata":{"openCases":"12","closedCases":"82"}},{"label":"Data","id":"assets","icon":"px-fea:asset","children":[{"label":"Asset #1","id":"a1"},{"label":"Asset #2","id":"a2"}]},{"label":"Dashboards","id":"dashboards","icon":"px-fea:dashboard","children":[{"label":"Personal Data","id":"trucks","icon":"px-obj:truck"},{"label":"Orders","id":"orders","icon":"px-fea:orders"},{"label":"Analysis","id":"invoices","icon":"px-fea:templates"}]}]'
+            selected-route='["home"]'></px-app-nav>
+        <px-modal id="myModal" header-text="Confirm Kyle's Website is awesome" body-text="Do you want to confirm that Kyle's Website is awesome?"
+            accept-text="Permanently Comfirm awesomeness." reject-text="Cancel" opened>
+        </px-modal>
+        <div ng-app="">
+            <p>Name : <input type="text" ng-model="name"></p>
+            <h1>Hello {{name}}</h1>
+        </div>
 
-    <div class="divTable" style="width: 3%;border: 3px solid #000; background-color:rgb(0, 183, 255)">
-        <div class="divTableBody">
-            <div class="divTableRow">
-                <div class="divTableCell">This&nbsp;</div>
-                <div class="divTableCell">is&nbsp;</div>
-                <div class="divTableCell">an&nbsp;</div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell">Example&nbsp;</div>
-                <div class="divTableCell">of &nbsp;</div>
-                <div class="divTableCell">A&nbsp;</div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell">Data&nbsp;</div>
-                <div class="divTableCell">Grid&nbsp;</div>
-                <div class="divTableCell">test&nbsp;</div>
+        <div class="divTable" style="width: 3%;border: 3px solid #000; background-color:rgb(0, 183, 255)">
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">This&nbsp;</div>
+                    <div class="divTableCell">is&nbsp;</div>
+                    <div class="divTableCell">an&nbsp;</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Example&nbsp;</div>
+                    <div class="divTableCell">of &nbsp;</div>
+                    <div class="divTableCell">A&nbsp;</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">Data&nbsp;</div>
+                    <div class="divTableCell">Grid&nbsp;</div>
+                    <div class="divTableCell">test&nbsp;</div>
+                </div>
             </div>
         </div>
+        <!---<div w3-test-directive></div>-->
+
+        <h2>Full Name: {{firstName + " " + lastName}}</h2>
+        <h3>Database Data: {{databaseResponse}}</h3>
+
     </div>
-    <div w3-test-directive></div>
     <script src="js/app.js"></script>
 </body>
 
