@@ -28,37 +28,30 @@
             <p>Name : <input type="text" ng-model="name"></p>
             <h1>Hello {{name}}</h1>
         </div>
-
+        <h2>Star Wars API data</h2>
         <div class="divTable" style="width: 3%;border: 3px solid #000; background-color:rgb(0, 183, 255)">
             <div class="divTableBody">
                 <div class="divTableRow">
-                    <div class="divTableCell">This&nbsp;</div>
-                    <div class="divTableCell">is&nbsp;</div>
-                    <div class="divTableCell">an&nbsp;</div>
+                    <div class="divTableHeaderCell">Name&nbsp;</div>
+                    <div class="divTableHeaderCell">Birthday&nbsp;</div>
+                    <div class="divTableHeaderCell">Eye Color&nbsp;</div>
+                    <div class="divTableHeaderCell">Gender&nbsp;</div>
+                    <div class="divTableHeaderCell">Hair Color&nbsp;</div>
+                    <div class="divTableHeaderCell">Height&nbsp;</div>
+                    <div class="divTableHeaderCell">Mass&nbsp;</div>
                 </div>
-                <div class="divTableRow">
-                    <div class="divTableCell">Example&nbsp;</div>
-                    <div class="divTableCell">of &nbsp;</div>
-                    <div class="divTableCell">A&nbsp;</div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell">Data&nbsp;</div>
-                    <div class="divTableCell">Grid&nbsp;</div>
-                    <div class="divTableCell">test&nbsp;</div>
+                <div class="divTableRow" ng-repeat='result in databaseResponse'>
+                    <div class="divTableCell">{{result.name}}&nbsp;</div>
+                    <div class="divTableCell">{{result.birth_year}}&nbsp;</div>
+                    <div class="divTableCell">{{result.eye_color}}&nbsp;</div>
+                    <div class="divTableCell">{{result.gender}}&nbsp;</div>
+                    <div class="divTableCell">{{result.hair_color}}&nbsp;</div>
+                    <div class="divTableCell">{{result.height}}&nbsp;</div>
+                    <div class="divTableCell">{{result.mass}}&nbsp;</div>
                 </div>
             </div>
         </div>
         <!---<div w3-test-directive></div>-->
-
-        <h2>Full Name: {{firstName + " " + lastName}}</h2>
-        <h3>Raw Array List of Star Wars characters from API: {{starWarsAPInames}}</h3>
-        <h3>Formatted list of names from API:</h3>
-        <ul>
-            <li ng-repeat='name in starWarsAPInames'>
-                {{name}}
-            </li>
-        </ul>
-
     </div>
     <script src="js/app.js"></script>
 </body>
