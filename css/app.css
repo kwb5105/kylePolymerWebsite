@@ -41,3 +41,12 @@
 	padding: 3px 10px;
 	font-weight: bold;
 }
+
+.grid {
+	width: 800px;
+	height: 250px;
+}
+
+.ui-grid-contents-wrapper {
+	height: 10%;
+}
